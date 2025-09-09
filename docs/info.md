@@ -30,6 +30,10 @@ This project implements a *3-bit Adder-Subtractor* circuit using *Full Adders* a
 
 You can verify correctness by comparing the circuit outputs with manual binary addition and subtraction calculations.
 
+| CTRL | Operation   | Effective B input        | Initial Cin | Function Performed        |
+| ---- | ----------- | ------------------------ | ----------- | ------------------------- |
+| 0    | Addition    | B (unchanged)            | 0           | S = A + B                 |
+| 1    | Subtraction | \~B (bitwise inverted B) | 1           | S = A + (\~B + 1) = A – B |
 ---
 
 ## External hardware
